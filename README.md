@@ -14,7 +14,7 @@ Originally, we intended to use the QUADSPI port for communicating with the exter
  
 Solderable jumpers on the bottom of the device allow users the option to decide if they would like VUSB disconnected from VIN. Additional jumpers on D+ and D- lines of the USB micro-B connector are wired to the USB FS pins by default. Users may cut the default net tie and solder bridge the USB HS data pins if they wish to sacrifice SPI2's functionality for improved data transmission rates.
 
-We chose a [25MHz oscillator](https://lcsc.com/product-detail/SMD-Oscillators-XO_EPSON_Q33310F70032100_SG-310SCF-25MHZ-3-3V-40-85_C32526.html) as per ST recommendations for best stability of high-speed peripherals. Supply decoupling capacitors were included as well for improved stability. The current revision of Ranka N1 does not feature a dedicated analog power section, as there is not enough room granted for two power supply sections. Since the MCU is an LQFP package, it's technically possible to solder to the pins directly if a dedicated analog supply section is desired.
+We chose a [25MHz oscillator](https://lcsc.com/product-detail/SMD-Oscillators-XO_EPSON_Q33310F70032100_SG-310SCF-25MHZ-3-3V-40-85_C32526.html) as per ST recommendations for best stability of high-speed peripherals. Supply decoupling capacitors were included as well for improved stability. The current revision of Ranka N1 does not feature a dedicated analog power section, as there is not enough physical space for two power supply sections due to process limitations. Since the MCU is an LQFP package, it's technically possible to solder to the pins directly if a dedicated analog supply section is desired.
 
 ## Realization
 
