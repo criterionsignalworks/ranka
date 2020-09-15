@@ -18,9 +18,9 @@ We chose a [25MHz oscillator](https://lcsc.com/product-detail/SMD-Oscillators-XO
 
 ST provided sample [STM32F746NG](https://estore.st.com/en/stm32f746ngh6-cpn.html) chips for evaluation. Since we do not have any breakout boards for the BGA package, we made Ranka N0.1 and N0.2 using dead bug prototyping method to begin developing software targeting STM32F7 devices. As you can see, the result isn't too elegant
 
-Schematic of minimal components specifically for the microcontroller are derived from ST's documentation. Rail regulation and protection consist of a reverse blocking P channel enhancement mode MOSFET and a low dropout regulator selected mostly for efficiency. We omitted TVS diodes or current limiting on VIN due to space limitations with our current process.
+Schematic of minimal components specifically for the microcontroller are derived from [ST's documentation](https://www.st.com/resource/en/application_note/dm00164549-getting-started-with-stm32f7-series-mcu-hardware-development-stmicroelectronics.pdf). Rail regulation and protection consist of a reverse blocking P channel enhancement mode MOSFET and a low dropout regulator selected mostly for efficiency. We omitted TVS diodes or current limiting on VIN due to space limitations with our current process.
 
-The board is routed according to design rules based on JLCPCB's capabilities. We chose to use any-angle/topographical routing for Ranka N1 primarily for improved efficiency and aesthetics. While any-angle routing is superior to conventional methods, we are still in the experimentation phase and will continue to perfect our method in upcoming revisions.
+The board is routed according to design rules based on JLCPCB's [capabilities](https://jlcpcb.com/capabilities/Capabilities). We chose to use any-angle/topographical routing for Ranka N1 primarily for improved efficiency and aesthetics. While any-angle routing is superior to conventional methods, we are still in the experimentation phase and will continue to perfect our method in upcoming revisions.
 
 ## Results
 
@@ -33,7 +33,7 @@ Choosing SPI3 for boot loading from flash seemed to be a bad idea. We did not co
 
 The debug connectors certainly could be designed better. 2x4 array of through hole headers with a pitch of 2mm proved to be difficult to work with. Perhaps consider aligning SWD pins in one column for future designs, so a much less complex programming harness and receptacle may be utilized.
 
-Additionally, there was a mistake with the pin numbering on the top side silkscreen. Pin 18 was counted twice and numbers after 18 are offset by one. It doesn't affect functionality in any way, aside from being inconvenient and annoying.
+Additionally, there was a mistake with the pin numbering on the top side silkscreen. Pin 18 was counted twice and numbers after 18 are offset by one. It doesn't affect functionality in any way, aside from being inconvenient and annoying. ![Image of mislabeled pins](images/ranka-n1-top-label.jpg)
 
 ## Future Plans
 
@@ -43,7 +43,7 @@ We may produce another revision of these boards targeting the same STM32F730 mic
 
 ## JLCPCB
 
-We want to briefly acknowledge support from JLCPCB as they have made this whole project possible. Previously, when we were still learning to create PCBs, JLCPCB customer assurance supported us and would always notify us if there was a problem with our board. This was extremely helpful and the combined flexibility and cost savings JLCPCB offers has kept us grateful for their efforts to inspire hobbyists like us.
+We want to briefly acknowledge support from [JLCPCB](https://jlcpcb.com/) as they have made this whole project possible. Previously, when we were still learning to create PCBs, JLCPCB customer assurance supported us and would always notify us if there was a problem with our board. This was extremely helpful and the combined flexibility and cost savings JLCPCB offers has kept us grateful for their efforts to inspire hobbyists like us.
 
 After ordering approximately 500 PCBs for numerous projects, JLCPCB has consistently offered quick and easy customer support, affordable prices, and plenty of flexibility for a wide range of products. We recommend it to any hobbyist trying to create their personal circuit boards.
 
