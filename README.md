@@ -35,7 +35,7 @@ Choosing SPI3 for boot loading from flash seemed to be a bad idea. We did not co
 
 The debug connectors certainly could be designed better. 2x4 array of through hole headers with a pitch of 2mm proved to be difficult to work with. Perhaps consider aligning SWD pins in one column for future designs, so a much less complex programming harness and receptacle may be utilized.
 
-Additionally, there was a mistake with the pin numbering on the top side silkscreen. Pin 18 was counted twice and numbers after 18 are offset by one. It doesn't affect functionality in any way, aside from being inconvenient and annoying. ![Image of mislabeled pins](images/ranka-n1-top-label-crop.jpg)
+Additionally, there was a mistake with the pin numbering on the top side silkscreen. Pin 18 was counted twice and numbers after 18 are offset by one. It doesn't affect functionality in any way, aside from being inconvenient and annoying. ![Image of mislabeled pins](images/ranka-n1-top-label-crop.png)
 
 ## Future Plans
 
