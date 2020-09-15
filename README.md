@@ -22,7 +22,7 @@ ST provided sample [STM32F746NG](https://estore.st.com/en/stm32f746ngh6-cpn.html
 
 ![Image of Ranka N0.5 prototype](images/tcs-ranka-n0-5-crop.png)
 
-Schematic of minimal components specifically for the microcontroller are derived from [ST's documentation](https://www.st.com/resource/en/application_note/dm00164549-getting-started-with-stm32f7-series-mcu-hardware-development-stmicroelectronics.pdf). Rail regulation and protection consist of a reverse blocking P channel enhancement mode MOSFET and a low dropout regulator selected mostly for efficiency. We omitted TVS diodes or current limiting on VIN due to space limitations with our current process.
+Schematic of minimal components specifically for the microcontroller is derived from [ST's documentation](https://www.st.com/resource/en/application_note/dm00164549-getting-started-with-stm32f7-series-mcu-hardware-development-stmicroelectronics.pdf). Rail regulation and protection consist of a reverse blocking P channel enhancement mode MOSFET and a low dropout regulator selected mostly for efficiency. We omitted TVS diodes or current limiting on VIN due to space limitations with our current process.
 
 The board is routed according to design rules based on JLCPCB's [capabilities](https://jlcpcb.com/capabilities/Capabilities). We chose to use any-angle/topographical routing for Ranka N1 primarily for improved efficiency and aesthetics. While any-angle routing is superior to conventional methods, we are still in the experimentation phase and will continue to perfect our method in upcoming revisions.
 
@@ -32,7 +32,7 @@ The board is routed according to design rules based on JLCPCB's [capabilities](h
 
 The physical boards were fabricated and assembled without issues. External flash chip, user button, and micro-USB type B port required manual soldering as they are not available for SMT assembly service. Buttons of the exact footprint had not been acquired, so a bodge was done for prototyping.
 
-Our expectations were met after initial testing with power rail measurements and software toolchain demos. Using STM32CubeMX init code generator and HAL quick start code, we successfully blinked the user LED on board!
+Our expectations were met after initial testing with power rail measurements and software toolchain demos. Using STM32CubeMX init code generator and HAL quick start code, we successfully blinked the user LED on board.
 
 ## Revision Opportunities
 Choosing SPI3 for boot loading from flash seemed to be a bad idea. We did not consider the possibility that the specific peripheral device would not support boot loading like SPI1, 2, or QUADSPI. One possible workaround to this issue is to manually wire SPI1 pins to the external flash footprint from broadside pin headers. DAC and four analog channels would be occupied by the on-board external flash. This would not be feasible for production/release but will be adequate for prototyping.
