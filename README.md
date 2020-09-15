@@ -24,7 +24,7 @@ Schematic of minimal components specifically for the microcontroller are derived
 
 The board is routed according to design rules based on JLCPCB's [capabilities](https://jlcpcb.com/capabilities/Capabilities). We chose to use any-angle/topographical routing for Ranka N1 primarily for improved efficiency and aesthetics. While any-angle routing is superior to conventional methods, we are still in the experimentation phase and will continue to perfect our method in upcoming revisions.
 
-![Image of routed layers in EDA](ranka-n1-eda-layer-3d-rotate.png)
+![Image of routed layers in EDA](images/ranka-n1-eda-layer-3d-rotate.png)
 
 ## Results
 
