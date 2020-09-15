@@ -20,6 +20,8 @@ We chose a [25MHz oscillator](https://lcsc.com/product-detail/SMD-Oscillators-XO
 
 ST provided sample [STM32F746NG](https://estore.st.com/en/stm32f746ngh6-cpn.html) chips for evaluation. Since we do not have any breakout boards for the BGA package, we made Ranka N0.1 and N0.2 using dead bug prototyping method to begin developing software targeting STM32F7 devices. As you can see, the result isn't too elegant
 
+![Image of Ranka N0.5 prototype](images/tcs-ranka-n0-5-crop.png)
+
 Schematic of minimal components specifically for the microcontroller are derived from [ST's documentation](https://www.st.com/resource/en/application_note/dm00164549-getting-started-with-stm32f7-series-mcu-hardware-development-stmicroelectronics.pdf). Rail regulation and protection consist of a reverse blocking P channel enhancement mode MOSFET and a low dropout regulator selected mostly for efficiency. We omitted TVS diodes or current limiting on VIN due to space limitations with our current process.
 
 The board is routed according to design rules based on JLCPCB's [capabilities](https://jlcpcb.com/capabilities/Capabilities). We chose to use any-angle/topographical routing for Ranka N1 primarily for improved efficiency and aesthetics. While any-angle routing is superior to conventional methods, we are still in the experimentation phase and will continue to perfect our method in upcoming revisions.
