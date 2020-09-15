@@ -1,0 +1,21 @@
+Designator,Comment,Layer,Footprint,Center-X(mm),Center-Y(mm),Rotation,LCSC Part #,Engineer note
+U3,ME6217C33M5G,TopLayer,SOT-23-5-Reverse,4.37,28.75,0, C427602,
+R4,100,TopLayer,CS-0402!,14.12,10,90,,
+R3,1k,TopLayer,CS-0402!,11.12,3.5,270,,
+R2,1k,TopLayer,CS-0402!,9.92,29.3,270,,
+R1,1k,TopLayer,CS-0402!,9.92,27,270,,
+DA1,AZ1045,TopLayer,DFN2510P10E,7.87,28.75,270,C356811,Device can be flipped 180 degrees
+D2,White,TopLayer,CS-0402!,15.37,35.75,180,C74342,Cathode/ground points to silkscreen mark
+D1,Red,TopLayer,CS-0402!,1.87,35.75,180, C74339,Cathode/ground points to silkscreen mark
+C8,100nF,TopLayer,CS-0402!,13.62,8.5,0,,
+C7,10uF,TopLayer,CS-0603,3.62,26.25,0,,
+C6,10uF,TopLayer,CS-0603,6.37,26.25,180,,
+C5,100nF,TopLayer,CS-0402!,3.87,9,270,,
+C4,100nF,TopLayer,CS-0402!,11.12,7,90,,
+C3,100nF,TopLayer,CS-0402!,2.62,20.25,90,,
+C2,100nF,TopLayer,CS-0402!,14.37,20.25,270,,
+C1,4.7uF,TopLayer,CS-0603,2.62,9.5,90,,
+RB1,NCE3407,TopLayer,SOT-23-3,8.62,24,270, C113770,
+XO1,Q33310F70032100,TopLayer,XO-3225,4.37,23.5,180, C32526,Pin 1 points to silkscreen mark
+U1,STM32F730R8T6,TopLayer,LQFP64,8.52,15,0, C478453,Pin 1 points to silkscreen mark
+U2,FM25W32,TopLayer,SOP-8-Extended,6.37,5.25,180, C431483,Pin 1 points to silkscreen mark
